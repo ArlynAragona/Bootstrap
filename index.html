@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .header-img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .post-img {
+      height: 180px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 5px;
+    }
+    .quote {
+      font-style: italic;
+      color: #555;
+      text-align: center;
+      margin: 15px 0;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Foodies</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#posts">Posts</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Message Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section id="home" class="container mt-4">
+  <img src="images/img1.jpg" class="header-img">
+</section>
+
+<!-- BLOG POSTS / IMAGES -->
+<section id="posts" class="container mt-4">
+
+  <div class="row g-3">
+
+    <div class="col-md-4 col-sm-6">
+      <img src="1.png" class="post-img">
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="2.png" class="post-img">
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="3.png" class="post-img">
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="4.png" class="post-img">
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="5.png" class="post-img">
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="6.png" class="post-img">
+    </div>
+
+  </div>
+
+  <!-- TWO QUOTES -->
+  <p class="quote">"People who love to eat are always the best people." – Julia Child</p>
+  <p class="quote">"Life is uncertain. Eat dessert first." – Ernestine Ulmer</p>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container mt-5 p-4 bg-white shadow-sm rounded">
+  <h4 class="fw-bold">About Me</h4>
+  <p class="text-muted">I’m a food lover who enjoys sharing everything delicious.</p>
+</section>
+
+<!-- MESSAGE US -->
+<section id="contact" class="container mt-5 p-4 bg-white shadow-sm rounded">
+  <h4 class="fw-bold mb-3">Message Us</h4>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Your Name">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Your Email">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-center text-white py-3 mt-4">
+  <small>&copy; 2025 Foodie. All Rights Reserved.</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
